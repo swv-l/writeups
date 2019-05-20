@@ -9,4 +9,5 @@ File naming convention: {ctf name}-{ctf year}-{question number}-{question name}.
 ### Harekaze 2019
 
 [[a-z().]](harekaze-2019-46-a-z.md) - Ben Taylor
+
 [twenty-five](harekaze-2019-40-twenty-five.md) - Eric Zhang
