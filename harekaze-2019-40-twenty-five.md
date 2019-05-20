@@ -1,6 +1,6 @@
 # Harekaze 2019 "Twenty-five" (question 40)
 
-## Writeup by Eric Zhang
+Writeup by Eric Zhang
 
 ## Description
 
