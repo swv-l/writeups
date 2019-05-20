@@ -8,6 +8,6 @@ File naming convention: {ctf name}-{ctf year}-{question number}-{question name}.
 
 ### Harekaze 2019
 
-[[a-z().]](harekaze-2019-46-a-z.md) - Ben Taylor
+[[a-z().]](harekaze-2019-46-a-z.md) (200) - Ben Taylor
 
-[twenty-five](harekaze-2019-40-twenty-five.md) - Eric Zhang
+[twenty-five](harekaze-2019-40-twenty-five.md) (100) - Eric Zhang
