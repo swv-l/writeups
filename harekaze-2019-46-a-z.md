@@ -1,6 +1,6 @@
 # Harekaze [a-z().] (question 46)
 
-## Writeup by Ben Taylor
+Writeup by Ben Taylor
 
 ## Description
 
