@@ -52,7 +52,7 @@ In `Dockerfile` we see that `chall` gets copied into `/var/www/html`, so I guess
 
 That points us to a trick called Directory Traversal. I basically knew nothing about it except what it's called, but that's what Google is for. A quick search led me to OWASP's wiki article on [path traversal](https://www.owasp.org/index.php/Path_Traversal).
 
-The general idea is to find a part of the application that accesses a file and give it a naughty little path that exposes the private bits of the system you want to access. The key to this trick is generous usage of `..`, the hidden file in every *nix and Windows folder that points to parent directory of the current directory. Theoretically you can chain enough of these to go as far up as you'd like, and then work your way down from there.
+The general idea is to find a part of the application that accesses a file and give it a naughty little path that exposes the private bits of the system you want to access. The key to this trick is generous usage of `..`, the hidden file in every \*nix and Windows folder that points to parent directory of the current directory. Theoretically you can chain enough of these to go as far up as you'd like, and then work your way down from there.
 
 So, where can I jam this magical string into the challenge server?
 
