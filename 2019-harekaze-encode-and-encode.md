@@ -97,7 +97,7 @@ We can see that each link in the page is given an event listener, which takes th
 
 All we need to do is send our own requests with a specially crafted URL and we'll be able to get at that `/flag` [mwahahaha].
 
-I chose to use [Insomnia](https://insomnia.rest) for sending my requests. Other HTTP clients like Postman or cURL would work just fine. Making your own `fetch()` calls in the developer console or something would work too. Heck, you could get away with just using Inspect Element to modify link `href`s if you felt like it. But I don't feel like it, so I'm using Insomnia.
+I chose to use [Insomnia](https://insomnia.rest) for sending my requests. Other HTTP clients like Postman or cURL would work just fine. Making your own `fetch()` calls in the developer console or something would work too. Heck, you could get away with just using Inspect Element to modify link `href`s on the page if you felt like it. But I don't feel like it, so I'm using Insomnia.
 
 Since `index.html` is in `/var/www/html/chall`, we just need to replace each folder with `..` to get to the root. So `/../../../../flag` allows us to traverse from the web root to the flag file.
 
