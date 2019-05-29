@@ -10,6 +10,8 @@ File naming convention: {ctf year}-{ctf name}-{question name}.md
 
 [[a-z().]](2019-harekaze-a-z.md) - Ben Taylor
 
+[Encode & Encode](2019-harekaze-encode-and-encode.md) - James Martindale
+
 [twenty-five](2019-harekaze-twenty-five.md) - Eric Zhang
 
 ### Securityfest 2019
