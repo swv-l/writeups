@@ -63,7 +63,7 @@ Great, we have strings. From here, we can use any string methods or properties t
 (typeof(x)).search((typeof(true))) == -1
 ```
 
-Because we can use `concat`, it might be a good idea to form the digits individually and concatenate them since we're lacking any mathematical methods. How can we turn a number into a string? We can't use `toString`, `String`, or `+ ""`. But because JavaScript is a prototype based language, every instance is itself a "class". So using one string, we can access it's constructor with the `constructor` property! We can extend this ideas to numbers to get access to the `Number` class as well to turn strings back into numbers — remember, the expression must evaluate to a number.
+Because we can use `concat`, it might be a good idea to form the digits individually and concatenate them since we're lacking any mathematical methods. How can we turn a number into a string? We can't use `toString`, `String`, or `+ ""`. But because JavaScript is a prototype based language, every instance is itself a "class". So using one string, we can access it's constructor with the `constructor` property! We can extend this ideas to numbers to get access to the `Number` class as well to turn strings back into numbers — remember, the final expression must evaluate to a number.
 
 ``` JavaScript
 (typeof(x)).constructor == String
