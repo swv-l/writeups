@@ -32,7 +32,7 @@ encode-and-encode
 
 I have no clue how Docker works, but I figure that `Dockerfile` might have *something* useful. So I open it up in a text editor hoping that it's a plain text file, and I was not disappointed:
 
-```docker
+```dockerfile
 FROM php:7.3-apache
 
 COPY ./php.ini $PHP_INI_DIR/php.ini
