@@ -32,7 +32,7 @@ encode-and-encode
 
 I have no clue how Docker works, but I figure that `Dockerfile` might have *something* useful. So I open it up in a text editor hoping that it's a plain text file, and I was not disappointed:
 
-```docker
+```dockerfile
 FROM php:7.3-apache
 
 COPY ./php.ini $PHP_INI_DIR/php.ini
@@ -102,7 +102,7 @@ I chose to use [Insomnia](https://insomnia.rest) for sending my requests. Other 
 Since `index.html` is in `/var/www/html/chall`, we just need to replace each folder with `..` to get to the root. So `/../../../../flag` allows us to traverse from the web root to the flag file.
 
 The request is quite simple:
-![POST {"page": "../../../../flag"} to http://153.127.202.154:1001/query.php](images/2019-harekaze-encode-and-encode-insomnia.png "POST {\"page\": \"../../../../flag\"} to http://153.127.202.154:1001/query.php")
+![POST {"page": "../../../../flag"} to http://153.127.202.154:1001/query.php](static/2019-harekaze-encode-and-encode-insomnia.png "POST {\"page\": \"../../../../flag\"} to http://153.127.202.154:1001/query.php")
 *This screenshot is just for people curious on how to set up this request in Insomnia. For the rest of this write-up I'll just show the request method, URL, and body.*
 
 Anyway, we get back an unfortunate response:
@@ -206,7 +206,7 @@ I'll admit, I was pretty stumped for a while.
 
 So far we've done one encode, the JSON escape thingy. But the challenge is called "Encode & Encode". I wonder if that means something...
 
-![A whole bunch of thinking emoji](images/2019-harekaze-encode-and-encode-thinking.gif "🤔🤔🤔🤔🤔🤔🤔")
+![A whole bunch of thinking emoji](static/2019-harekaze-encode-and-encode-thinking.gif "🤔🤔🤔🤔🤔🤔🤔")
 
 Let's take another look at `$banword`:
 
@@ -223,7 +223,7 @@ $banword = [
 
 We've bypassed two of the elements in that array, but there's one we haven't touched. This weird thing called "stream wrappers". They wouldn't put it in there unless it was important, right?
 
-![Buzz Lightyear doing a hmm](images/2019-harekaze-encode-and-encode-hmm.jpg "Buzz Lightyear doing a hmm")
+![Buzz Lightyear doing a hmm](static/2019-harekaze-encode-and-encode-hmm.jpg "Buzz Lightyear doing a hmm")
 
 I went back to the fountain of all information, Google, and searched for something along the lines of "PHP stream wrapper vulnerabilities". Wasn't really sure what I was looking for, since I have no clue what stream wrappers are. I found an article from the blog of RIPS (a static analysis tool for finding security vulnerabilities #notsponsored) called [New PHP Exploitation Technique Added](https://blog.ripstech.com/2018/new-php-exploitation-technique/). That sounded exciting.
 
@@ -271,4 +271,4 @@ But to be honest, I just used https://www.asciitohex.com/. Hope they enjoyed my 
 Flag: `HarekazeCTF{turutara_tattatta_ritta}`
 
 I asked my Japanese friend if that meant anything and he said it was gibberish. Google Translate didn't tell me much:
-![It was cold](images/2019-harekaze-encode-and-encode-translate.png "It was cold, whatever that means")
+![It was cold](static/2019-harekaze-encode-and-encode-translate.png "It was cold, whatever that means")

@@ -17,3 +17,5 @@ File naming convention: {ctf year}-{ctf name}-{question name}.md
 ### Securityfest 2019
 
 [Baby1](2019-securityfest-baby1.md) - Ben Taylor
+
+[Signal](2019-securityfest-signal.md) - James Martindale
